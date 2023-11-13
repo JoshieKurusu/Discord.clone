@@ -68,7 +68,8 @@ header {
                         }
                         a {
                             margin: 0px 8px;
-                            font: normal 600 1rem/22px 'GG Sans-SemiBold', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;                            padding: 10px 10px;
+                            font: normal 600 1rem/22px 'GG Sans-SemiBold', "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            padding: 10px 10px;
                             text-align: center;
                             text-decoration: none;
                             color: white;
@@ -2091,7 +2092,7 @@ footer {
     .home-hero {
         width: auto;
         height: 642px;
-        background: #4251E9 url(../img_svg/Home/8a8375ab7908384e1fd6efe40828420315.png) no-repeat 85% bottom / contain;
+        background: #4251E9 url(../img_svg/Home/8a8375ab7908384e1fd6efe40828420312.png) no-repeat 85% bottom / contain;
         background-size: 375px 192px;
         .hero-container {
             width: auto;
@@ -2474,11 +2475,10 @@ footer {
             //height: 718px;
             height: auto;
             padding-bottom: 0;
-            background-position: 85% bottom;
-            background-size: 609px 311px;
         }
         //Home Page CSS (START)
         .home-hero {
+            background-size: 609px 311px;
             .hero-container {
                 div {
                     max-width: none;
@@ -2498,7 +2498,8 @@ footer {
         }
         //Home Page Hero Section CSS (START)
         .home-hero {
-            height: 718px;
+            height: 666px;
+            background-size: 425px 217px;
             .hero-container {
                 div {
                     max-width: 614px;
@@ -2709,7 +2710,7 @@ footer {
     .home-hero {
         width: auto;
         height: 709.06px;
-        background: #4251E9 url(../img_svg/Home/8a8375ab7908384e1fd6efe40828420314.png) no-repeat left bottom / contain;
+        background: #4251E9 url(../img_svg/Home/8a8375ab7908384e1fd6efe4082842031.png) no-repeat left bottom / contain;
         .hero-container {
             width: auto;
             height: auto;

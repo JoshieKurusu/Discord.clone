@@ -1926,7 +1926,7 @@ footer .row2 button:hover {
   .home-hero {
     width: auto;
     height: 642px;
-    background: #4251E9 url(../img_svg/Home/8a8375ab7908384e1fd6efe40828420315.png) no-repeat 85% bottom/contain;
+    background: #4251E9 url(../img_svg/Home/8a8375ab7908384e1fd6efe40828420312.png) no-repeat 85% bottom/contain;
     background-size: 375px 192px;
   }
   .home-hero .hero-container {
@@ -2281,7 +2281,8 @@ footer .row2 button:hover {
   header {
     height: auto;
     padding-bottom: 0;
-    background-position: 85% bottom;
+  }
+  .home-hero {
     background-size: 609px 311px;
   }
   .home-hero .hero-container div {
@@ -2298,7 +2299,8 @@ footer .row2 button:hover {
     padding-bottom: 0;
   }
   .home-hero {
-    height: 718px;
+    height: 666px;
+    background-size: 425px 217px;
   }
   .home-hero .hero-container div {
     max-width: 614px;
@@ -2471,7 +2473,7 @@ footer .row2 button:hover {
   .home-hero {
     width: auto;
     height: 709.06px;
-    background: #4251E9 url(../img_svg/Home/8a8375ab7908384e1fd6efe40828420314.png) no-repeat left bottom/contain;
+    background: #4251E9 url(../img_svg/Home/8a8375ab7908384e1fd6efe4082842031.png) no-repeat left bottom/contain;
   }
   .home-hero .hero-container {
     width: auto;

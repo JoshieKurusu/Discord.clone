@@ -1,0 +1,1545 @@
+ -----------------------------------------------
+|(DONE)						| 
+|FIX THE DOWNLOAD SECTION AND USE GRID LAYOUT	|
+|						|
+| CHANGE THE WIDTH AND HEIGHT OF THE BUTTONS IN	|
+| DOWNLOAD SECTION				|
+ -----------------------------------------------
+
+
+ -------------------------------------------------------
+|DONT FORGET TO MAKE YOUR FONT SIZE AND SPACING FLUID	|
+|BASED ON THE SIZE OF THE BROWSER			|
+ -------------------------------------------------------
+
+
+ -------------------------------------------------------
+|NEXT TO DO -->	(DONE)					|
+|	MAKE THE HERO AND DOWNLOAD SECTION FLUID OR 	|
+|RESPONSIVE 375px TO 767px 				|
+|							|
+ -------------------------------------------------------
+
+
+width: 149.95
+height: 56
+
+width: 181.95
+height: 56
+
+width: 329.19
+height: 56
+
+
+
+    //Download Page CSS (START)
+section.download-hero {
+    width: auto;
+    height: auto;
+    background: #23272A;
+    div.hero-container {
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        position: relative;
+        div {
+            width: 46.03174603%;
+            height: 352px;
+            margin: 120px 0 120px 40px;
+            div.hero-text {
+                width: 100%;
+                height: 256px;
+                margin: 0;
+                padding: 0;
+                h1 {
+                    width: auto;
+                    height: auto;
+                }
+                p {
+                    width: auto;
+                    height: auto;
+                }
+            }
+            div.btn-container {
+                width: 100%;
+                height: 80px;
+                margin: 16px 0 0;
+                padding: 0;
+                display: inline-flex;
+                button.dl-btn {
+                    padding: 16px 32px;
+                    border-radius: 30px;
+                    margin: 24px 0 0;
+                    border: none;
+                    background: #5967EF;
+                    font: normal 500 1.25rem/24px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                    color: black;
+                    svg {
+                        position: relative;
+                        margin: 0 4px -5px 0;
+                        width: 24px;
+                        height: 24px;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        background: #7A85F2;
+                    }
+                }
+                p {
+                    width: auto;
+                    height: 24px;
+                    margin: 40px 0 0 23px;
+                    color: white;
+                    font: normal 400 1rem/24px 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                }
+            }
+        }
+        /*img.hero-img {
+            width: 602px;
+            height: 352px;
+            position: absolute;
+            right: 0;
+            margin: 120px 19px;
+        }*/
+    }
+}
+section.download {
+    width: auto;
+    height: auto;
+    div.download-container {
+        width: 1180px;
+        height: auto;
+        margin: 120px auto;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 156px auto 156px auto 156px;
+        div.ios-card {
+            width: 468px;
+            height: 544px;
+            padding: 56px 56px 0;
+            border-radius: 20px;
+            background: #F6F6F6;
+            grid-column: span 1;
+            grid-row: span 2;
+            overflow: hidden;
+            div.ios-text {
+                width: 468px;
+                height: 110px;
+                margin: 0;
+                text-align: center;
+                h3 {
+                    width: 49px;
+                    height: 38px;
+                    margin: 0 auto;
+                    padding: 0;
+                    color: #23272A;
+                    font: normal 600 2rem/38px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                }
+                button {
+                    height: 56px;
+                    margin: 16px auto 0;
+                    padding: 16px 32px;
+                    background: #23272A;
+                    border: none;
+                    border-radius: 30px;
+                    font: normal 500 1.25rem/24px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        background: #313338;
+                        box-shadow: 0 6px 12px 0 rgb(0, 0, 0, 0.3);
+                    }
+                }
+            }
+            img {
+                width: 440px;
+                height: 714px;
+                margin: 64px 0 0;
+                object-fit: cover;
+                object-position: top;
+                overflow-y: hidden;
+            }
+        }
+        div.android-card {
+            width: 468px;
+            height: 544px;
+            padding: 56px 56px 0;
+            border-radius: 20px;
+            background: #F6F6F6;
+            overflow: hidden;
+            grid-column: 2;
+            grid-row: 2/span 2;
+            div.android-text {
+                width: 468px;
+                height: 110px;
+                margin: 0;
+                text-align: center;
+                h3 {
+                    width: 112px;
+                    height: 38px;
+                    margin: 0 auto;
+                    padding: 0;
+                    color: #23272A;
+                    font: normal 600 2rem/38px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                }
+                button {
+                    height: 56px;
+                    margin: 16px auto 0;
+                    padding: 16px 32px;
+                    background: #23272A;
+                    border: none;
+                    border-radius: 30px;
+                    font: normal 500 1.25rem/24px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        background: #313338;
+                        box-shadow: 0 6px 12px 0 rgb(0, 0, 0, 0.3);
+                    }
+                }
+            }
+            img {
+                width: 440px;
+                height: 714px;
+                margin: 64px 0 0;
+                object-fit: cover;
+                object-position: top;
+                overflow-y: hidden;
+            }
+        }
+        div.linux-card {
+            width: 468px;
+            height: 544px;
+            padding: 56px 56px 0;
+            border-radius: 20px;
+            background: #F6F6F6;
+            grid-column: span 1;
+            grid-row: span 2;
+            overflow: hidden;
+            div.linux-text {
+                width: 468px;
+                height: 110px;
+                margin: 0;
+                text-align: center;
+                h3 {
+                    width: 112px;
+                    height: 38px;
+                    margin: 0 auto;
+                    padding: 0;
+                    color: #23272A;
+                    font: normal 600 2rem/38px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                }
+                button {
+                    height: 56px;
+                    margin: 16px auto 0;
+                    padding: 16px 32px;
+                    background: #23272A;
+                    border: none;
+                    border-radius: 30px;
+                    font: normal 500 1.25rem/24px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+                    svg {
+                        width: 24px;
+                        height: 24px;
+                        position: relative;
+                        margin: 0 0 -4px 8px;
+                        transform: rotate(90deg);
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        background: #313338;
+                        box-shadow: 0 6px 12px 0 rgb(0, 0, 0, 0.3);
+                    }
+                }
+            }
+            img {
+                width: 406px;
+                height: 331px;
+                margin: 64px 0 0;
+                object-fit: cover;
+                object-position: top;
+                overflow-y: hidden;
+            }
+        }
+        div.mac-card {
+            width: 468px;
+            height: 544px;
+            padding: 56px 56px 0;
+            border-radius: 20px;
+            background: #F6F6F6;
+            grid-column: span 1;
+            grid-row: span 2;
+            overflow: hidden;
+            div.mac-text {
+                width: 468px;
+                height: 110px;
+                margin: 0;
+                text-align: center;
+                h3 {
+                    width: 112px;
+                    height: 38px;
+                    margin: 0 auto;
+                    padding: 0;
+                    color: #23272A;
+                    font: normal 600 2rem/38px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                }
+                button {
+                    height: 56px;
+                    margin: 16px auto 0;
+                    padding: 16px 32px;
+                    background: #23272A;
+                    border: none;
+                    border-radius: 30px;
+                    font: normal 500 1.25rem/24px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        background: #313338;
+                        box-shadow: 0 6px 12px 0 rgb(0, 0, 0, 0.3);
+                    }
+                }
+            }
+            img {
+                width: 488px;
+                height: 286px;
+                margin: 64px 0 0;
+                object-fit: cover;
+                object-position: top;
+                overflow-y: hidden;
+            }
+        }
+        div.ptb-card {
+            width: 500px;
+            height: 191px;
+            padding: 48px 40px;
+            background: #F6F6F6;
+            grid-column: span 1;
+            grid-row: span 2;
+            h3 {
+                width: auto;
+                height: 38px;
+                margin: 0;
+                padding: 0;
+                color: #23272A;
+                font: normal 600 2rem/38px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+            }
+            p {
+                width: auto;
+                height: 65px;
+                margin: 16px 0;
+                padding: 0;
+                color: #23272A;
+                font: normal 400 1.25rem/33px 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+            }
+            button {
+                height: 56px;
+                padding: 16px 32px;
+                background: #23272A;
+                border: none;
+                border-radius: 30px;
+                font: normal 500 1.25rem/24px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+                svg {
+                    width: 24px;
+                    height: 24px;
+                    position: relative;
+                    margin: 0 0 -4px 8px;
+                    transform: rotate(90deg);
+                }
+                &:hover {
+                    cursor: pointer;
+                    background: #313338;
+                    box-shadow: 0 6px 12px 0 rgb(0, 0, 0, 0.3);
+                }
+            }
+        }
+    }
+}
+//Download Page CSS (END)
+
+
+
+
+
+section.download-hero {
+    width: auto;
+    height: auto;
+    background: #23272A;
+    div.hero-container {
+        max-width: 1260px;
+        width: 100%;
+        height: 592px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        div {
+            width: 580px;
+            height: 352px;
+            margin: 120px 20px 120px 40px;
+            div.hero-text {
+                width: 100%;
+                height: 256px;
+                margin: 0;
+                padding: 0;
+                h1 {
+                    width: auto;
+                    height: 160px;
+                    color: white;
+                    margin: 0 auto;
+                    font: normal 800 3.5rem/53px 'Ginto Plus Variable', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                }
+                p {
+                    width: auto;
+                    height: 56px;
+                    padding: 0;
+                    margin: 40px auto 0;
+                    color: white;
+                    font: normal 400 1.25rem/28px 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                }
+            }
+            div.btn-container {
+                width: 100%;
+                height: 80px;
+                margin: 16px 0 0;
+                padding: 0;
+                display: inline-flex;
+                button.dl-btn {
+                    padding: 16px 32px;
+                    border-radius: 30px;
+                    margin: 24px 0 0;
+                    border: none;
+                    background: #5967EF;
+                    font: normal 500 1.25rem/24px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                    color: black;
+                    svg {
+                        position: relative;
+                        margin: 0 4px -5px 0;
+                        width: 24px;
+                        height: 24px;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        background: #7A85F2;
+                    }
+                }
+                p {
+                    width: auto;
+                    height: 24px;
+                    margin: 40px 0 0 23px;
+                    color: white;
+                    font: normal 400 1rem/24px 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                }
+            }
+        }
+        img.hero-img {
+            max-width: 602px;
+            height: 352px;
+            //right: 17.15%;
+            //right: 320px;
+            //top: 20.6%;
+            //top: 200px;
+            //right: 18px;
+            //right: 0;
+            //top: 120px;
+            margin: auto 0;
+        }
+    }
+}
+
+
+
+section.download-hero {
+    width: auto;
+    height: auto;
+    background: #23272A;
+    div.hero-container {
+        max-width: 1180px;
+        width: 100%;
+        height: 352px;
+        margin: 0 auto;
+        padding: 120px 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+        div {
+            width: 580px;
+            height: auto;
+            grid-column: span 6;
+            div.hero-text {
+                width: 100%;
+                height: 256px;
+                margin: 0;
+                padding: 0;
+                h1 {
+                    width: auto;
+                    height: 160px;
+                    color: white;
+                    margin: 0 auto;
+                    font: normal 800 3.5rem/53px 'Ginto Plus Variable', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                }
+                p {
+                    width: auto;
+                    height: 56px;
+                    padding: 0;
+                    margin: 40px auto 0;
+                    color: white;
+                    font: normal 400 1.25rem/28px 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                }
+            }
+            div.btn-container {
+                width: 100%;
+                height: 80px;
+                margin: 16px 0 0;
+                padding: 0;
+                display: inline-flex;
+                button.dl-btn {
+                    padding: 16px 32px;
+                    border-radius: 30px;
+                    margin: 24px 0 0;
+                    border: none;
+                    background: #5967EF;
+                    font: normal 500 1.25rem/24px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                    color: black;
+                    svg {
+                        position: relative;
+                        margin: 0 4px -5px 0;
+                        width: 24px;
+                        height: 24px;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        background: #7A85F2;
+                    }
+                }
+                p {
+                    width: auto;
+                    height: 24px;
+                    margin: 40px 0 0 23px;
+                    color: white;
+                    font: normal 400 1rem/24px 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                }
+            }
+        }
+        div.hero-img {
+            position: relative;
+            grid-column: 7/span 6;
+            img {
+                height: 100%;
+                width: auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+
+
+
+        div.hero-img {
+            position: relative;
+            grid-column: 7/span 6;
+            img {
+                height: 100%;
+                width: auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                margin: 0 auto;
+            }
+        }
+
+
+min-width: 1065px to max-width: 1101px
+min-width: 1024px to max-width: 1064px
+
+
+
+
+
+
+section.download-hero {
+    width: auto;
+    height: auto;
+    background: #23272A;
+    div.hero-container {
+        max-width: 1180px;
+        width: 100%;
+        height: 352px;
+        margin: 0 auto;
+        padding: 120px 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0 20px;
+        div {
+            width: 580px;
+            height: auto;
+            grid-column: span 6;
+            div.hero-text {
+                width: 100%;
+                height: 256px;
+                margin: 0;
+                padding: 0;
+                h1 {
+                    width: auto;
+                    height: 160px;
+                    color: white;
+                    margin: 0 auto;
+                    font: normal 800 3.5rem/53px 'Ginto Plus Variable', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                }
+                p {
+                    width: auto;
+                    height: 56px;
+                    padding: 0;
+                    margin: 40px auto 0;
+                    color: white;
+                    font: normal 400 1.25rem/28px 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                }
+            }
+            div.btn-container {
+                width: 100%;
+                height: 80px;
+                margin: 16px 0 0;
+                padding: 0;
+                display: inline-flex;
+                button.dl-btn {
+                    padding: 16px 32px;
+                    border-radius: 30px;
+                    margin: 24px 0 0;
+                    border: none;
+                    background: #5967EF;
+                    font: normal 500 1.25rem/24px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                    color: black;
+                    svg {
+                        position: relative;
+                        margin: 0 4px -5px 0;
+                        width: 24px;
+                        height: 24px;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        background: #7A85F2;
+                    }
+                }
+                p {
+                    width: auto;
+                    height: 24px;
+                    margin: 40px 0 0 23px;
+                    color: white;
+                    font: normal 400 1rem/24px 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                }
+            }
+        }
+        div.hero-img {
+            position: relative;
+            grid-column: 7/span 6;
+            img {
+                height: 100%;
+                width: auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+
+
+section.download-hero {
+    width: auto;
+    height: auto;
+    background: #23272A;
+    div.hero-container {
+        max-width: 1180px;
+        width: 100%;
+        height: 352px;
+        margin: 0 auto;
+        padding: 120px 40px;
+        display: flex;
+        flex-direction: row;
+        gap: 0 20px;
+        div {
+            width: 580px;
+            height: auto;
+            div.hero-text {
+                width: auto;
+                height: auto;
+                margin: 0;
+                padding: 0;
+                h1 {
+                    width: auto;
+                    height: auto;
+                    color: white;
+                    margin: 0 auto;
+                    font: normal 800 3.5rem/53px 'Ginto Plus Variable', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                }
+                p {
+                    width: auto;
+                    height: auto;
+                    padding: 0;
+                    margin: 40px auto 0;
+                    color: white;
+                    font: normal 400 1.25rem/28px 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                }
+            }
+            div.btn-container {
+                width: 100%;
+                height: auto;
+                margin: 16px 0 0;
+                padding: 0;
+                display: inline-flex;
+                button.dl-btn {
+                    padding: 16px 32px;
+                    border-radius: 30px;
+                    margin: 24px 0 0;
+                    border: none;
+                    background: #5967EF;
+                    font: normal 500 1.25rem/24px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                    color: black;
+                    svg {
+                        position: relative;
+                        margin: 0 4px -5px 0;
+                        width: 24px;
+                        height: 24px;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        background: #7A85F2;
+                    }
+                }
+                p {
+                    width: auto;
+                    height: 24px;
+                    margin: 40px 0 0 23px;
+                    color: white;
+                    font: normal 400 1rem/24px 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                }
+            }
+        }
+        div.hero-img {
+            position: relative;
+            img {
+                height: 100%;
+                width: auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+    section.download {
+        width: auto;
+        height: auto;
+        div.download-container {
+            width: auto;
+            height: auto;
+            margin: 120px 40px;
+            div.ios-card {
+                div.ios-text {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            div.android-card {
+                div.android-text {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            div.linux-card {
+                div.linux-text {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            div.mac-card {
+                div.mac-text {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+
+
+
+section.download-hero {
+    width: auto;
+    height: auto;
+    background: #23272A;
+    div.hero-container {
+        max-width: 1180px;
+        width: 100%;
+        height: 352px;
+        margin: 0 auto;
+        padding: 120px 40px;
+        display: flex;
+        flex-direction: row;
+        gap: 0 20px;
+        div {
+            width: 580px;
+            height: auto;
+            div.hero-text {
+                width: auto;
+                height: auto;
+                margin: 0;
+                padding: 0;
+                h1 {
+                    width: auto;
+                    height: auto;
+                    color: white;
+                    margin: 0 auto;
+                    font: normal 800 3.5rem/53px 'Ginto Plus Variable', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                }
+                p {
+                    width: auto;
+                    height: auto;
+                    padding: 0;
+                    margin: 40px auto 0;
+                    color: white;
+                    font: normal 400 1.25rem/28px 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                }
+            }
+            div.btn-container {
+                width: 100%;
+                height: auto;
+                margin: 16px 0 0;
+                padding: 0;
+                display: inline-flex;
+                button.dl-btn {
+                    padding: 16px 32px;
+                    border-radius: 30px;
+                    margin: 24px 0 0;
+                    border: none;
+                    background: #5967EF;
+                    font: normal 500 1.25rem/24px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                    color: black;
+                    svg {
+                        position: relative;
+                        margin: 0 4px -5px 0;
+                        width: 24px;
+                        height: 24px;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        background: #7A85F2;
+                    }
+                }
+                p {
+                    width: 137px;
+                    height: 24px;
+                    margin: 40px 0 0 23px;
+                    color: white;
+                    font: normal 400 1rem/24px 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                }
+            }
+        }
+        div.hero-img {
+            position: relative;
+            img {
+                height: 100%;
+                width: auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+
+
+section.download {
+    width: auto;
+    height: auto;
+    div.download-container {
+        max-width: 1180px;
+        width: 100%;
+        height: auto;
+        margin: 120px auto;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 156px auto 156px auto 156px;
+        div.ios-card {
+            height: 544px;
+            padding: 56px 56px 0;
+            border-radius: 20px;
+            background: #F6F6F6;
+            grid-column: span 1;
+            grid-row: span 2;
+            overflow: hidden;
+            div.ios-text {
+                width: 468px;
+                height: 110px;
+                margin: 0;
+                text-align: center;
+                h3 {
+                    width: 49px;
+                    height: 38px;
+                    margin: 0 auto;
+                    padding: 0;
+                    color: #23272A;
+                    font: normal 600 2rem/38px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                }
+                button {
+                    height: 56px;
+                    margin: 16px auto 0;
+                    padding: 16px 32px;
+                    background: #23272A;
+                    border: none;
+                    border-radius: 30px;
+                    font: normal 500 1.25rem/24px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        background: #313338;
+                        box-shadow: 0 6px 12px 0 rgb(0, 0, 0, 0.3);
+                    }
+                }
+            }
+            img {
+                width: auto;
+                margin-top: 64px;
+            }
+        }
+        div.android-card {
+            height: 544px;
+            padding: 56px 56px 0;
+            border-radius: 20px;
+            background: #F6F6F6;
+            overflow: hidden;
+            grid-column: 2;
+            grid-row: 2/span 2;
+            div.android-text {
+                width: 468px;
+                height: 110px;
+                margin: 0;
+                text-align: center;
+                h3 {
+                    width: 112px;
+                    height: 38px;
+                    margin: 0 auto;
+                    padding: 0;
+                    color: #23272A;
+                    font: normal 600 2rem/38px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                }
+                button {
+                    height: 56px;
+                    margin: 16px auto 0;
+                    padding: 16px 32px;
+                    background: #23272A;
+                    border: none;
+                    border-radius: 30px;
+                    font: normal 500 1.25rem/24px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        background: #313338;
+                        box-shadow: 0 6px 12px 0 rgb(0, 0, 0, 0.3);
+                    }
+                }
+            }
+            img {
+                width: auto;
+                margin-top: 64px;
+            }
+        }
+        div.linux-card {
+            height: 544px;
+            padding: 56px 56px 0;
+            border-radius: 20px;
+            background: #F6F6F6;
+            grid-column: span 1;
+            grid-row: span 2;
+            overflow: hidden;
+            div.linux-text {
+                width: 468px;
+                height: 110px;
+                margin: 0;
+                text-align: center;
+                h3 {
+                    width: 112px;
+                    height: 38px;
+                    margin: 0 auto;
+                    padding: 0;
+                    color: #23272A;
+                    font: normal 600 2rem/38px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                }
+                button {
+                    height: 56px;
+                    margin: 16px auto 0;
+                    padding: 16px 32px;
+                    background: #23272A;
+                    border: none;
+                    border-radius: 30px;
+                    font: normal 500 1.25rem/24px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+                    svg {
+                        width: 24px;
+                        height: 24px;
+                        position: relative;
+                        margin: 0 0 -4px 8px;
+                        transform: rotate(90deg);
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        background: #313338;
+                        box-shadow: 0 6px 12px 0 rgb(0, 0, 0, 0.3);
+                    }
+                }
+            }
+            img {
+                width: auto;
+                margin-top: 64px;
+            }
+        }
+        div.mac-card {
+            height: 544px;
+            padding: 56px 56px 0;
+            border-radius: 20px;
+            background: #F6F6F6;
+            grid-column: span 1;
+            grid-row: span 2;
+            overflow: hidden;
+            div.mac-text {
+                width: 468px;
+                height: 110px;
+                margin: 0;
+                text-align: center;
+                h3 {
+                    width: 112px;
+                    height: 38px;
+                    margin: 0 auto;
+                    padding: 0;
+                    color: #23272A;
+                    font: normal 600 2rem/38px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                }
+                button {
+                    height: 56px;
+                    margin: 16px auto 0;
+                    padding: 16px 32px;
+                    background: #23272A;
+                    border: none;
+                    border-radius: 30px;
+                    font: normal 500 1.25rem/24px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+                    &:hover {
+                        cursor: pointer;
+                        background: #313338;
+                        box-shadow: 0 6px 12px 0 rgb(0, 0, 0, 0.3);
+                    }
+                }
+            }
+            img {
+                width: auto;
+                margin-top: 64px;
+            }
+        }
+        div.ptb-card {
+            height: 191px;
+            padding: 48px 40px;
+            background: #F6F6F6;
+            grid-column: span 1;
+            grid-row: span 2;
+            h3 {
+                width: auto;
+                height: 38px;
+                margin: 0;
+                padding: 0;
+                color: #23272A;
+                font: normal 600 2rem/38px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+            }
+            p {
+                width: auto;
+                height: 65px;
+                margin: 16px 0;
+                padding: 0;
+                color: #23272A;
+            }
+            button {
+                height: 56px;
+                padding: 16px 32px;
+                background: #23272A;
+                border: none;
+                border-radius: 30px;
+                text-align: center;
+                display: inline-flex;
+                font: normal 500 1.25rem/24px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+                svg.dropdown-arrow {
+                    width: 24px;
+                    height: 24px;
+                    position: relative;
+                    margin-left: 8px;
+                    float: right;
+                    transform: rotate(90deg);
+                }
+                &:hover {
+                    cursor: pointer;
+                    background: #313338;
+                    box-shadow: 0 6px 12px 0 rgb(0, 0, 0, 0.3);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+function myDropdown() {
+  document.getElementById("dropdownMenu").classList.toggle("active");
+}
+window.onclick = function(event){
+  if (!event.target.matches('.dropdown-btn')){
+    var dropdown_menu = document.getElementsByClassName("dropdown-menu");
+    var i;
+    for (i = 0; i < dropdown_menu.length; i++){
+      var openDropdown = dropdown_menu[i];
+      if (openDropdown.classList.contains('active')) {
+        openDropdown.classList.remove('active');
+      }
+    }
+  }
+}
+
+
+
+
+
+
+const containers = gsap.utils.toArray('.container');
+const menu_btn = document.querySelector('#menu_btn');
+const sidebar = document.querySelector('.nav-menu');
+const sidebar_menu = document.querySelector('#sidebar_menu');
+const close_btn = document.querySelector('.close-btn');
+const body = document.querySelector("body");
+
+containers.forEach((container, index) => {
+  gsap.set(container, { y: 50, opacity: 0});
+
+  ScrollTrigger.create({
+    id: index,
+    trigger: container,
+    start: () => `top-=${gsap.getProperty(container, 'y')} bottom-=200`,
+    end: () => `+=${container.clientHeight}`,
+    markers: false,
+    onEnter: () => {
+      $(container).addClass('active');
+      gsap.to(container, {y: 0, opacity: 1});
+    },
+  })
+})
+
+$(window).resize(function() {
+  if ($(window).width() >= 1024) {
+    sidebar.style.opacity = null;
+    sidebar.style.zIndex = null;
+    sidebar_menu.style.transform = null;
+  }
+});
+
+menu_btn.onclick = function() {
+    sidebar.style.opacity = "1";
+    sidebar.style.zIndex = "1";
+    sidebar_menu.style.transform = "translateX(0)";
+    body.style.overflowY = "hidden";
+
+    close_btn.onclick = function() {
+        sidebar.style.opacity = "0";
+        sidebar.style.zIndex = "-1";
+        sidebar_menu.style.transform = "translateX(315px)";
+        body.style.overflowY = "auto";
+    }
+}
+
+
+
+
+
+// When the user clicks on the button, toggle between hiding and showing the dropdown content
+function myFunction_Linux() {
+  document.getElementById("Dropdown_Linux").style.display = "block";
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropdown-btn')) {
+    var dropdown_linux = document.getElementsByClassName("dropdown-content-linux");
+    var i;
+    for (i = 0; i < dropdown_linux.length; i++) {
+      var openDropdown = dropdown_linux[i];
+      if (openDropdown.style.display = "block") {
+        openDropdown.style.display = null;
+      }
+    }
+  }
+}
+
+// When the user clicks on the button, toggle between hiding and showing the dropdown content
+function myFunction_PTB() {
+  document.getElementById("Dropdown_PTB").style.display = "block";
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropdown-ptb-btn')) {
+    var dropdown_ptb = document.getElementsByClassName("dropdown-content-ptb");
+    var i;
+    for (i = 0; i < dropdown_ptb.length; i++) {
+      var activeDropdown = dropdown_ptb[i];
+      if (activeDropdown.style.display = "block") {
+        activeDropdown.style.display = null;
+      }
+    }
+  }
+}
+
+
+
+
+
+    header {
+        width: auto;
+        height: auto;
+        nav {
+            width: auto;
+            div.navbar {
+                width: auto;
+                div.nav-menu {
+                    display: block; //default
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    opacity: 0;
+                    z-index: -1;
+                    background: rgba(0, 0, 0, 0.3);
+                    ul {
+                        display: block; //default
+                        height: 100%;
+                        //width: 0; //default
+                        width: 243px;
+                        margin: 0;
+                        padding: 24px 48px 0 24px;
+                        position: fixed;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        z-index: 2;
+                        overflow: hidden;
+                        transition: 0.5s;
+                        background: white;
+                        border-radius: 10px 0 0 10px;
+                        list-style: none;
+                        transform: translateX(315px);
+                        transition: all 0.2s ease-in-out;
+                        div.mobile-btns {
+                            display: block;
+                            width: 100%;
+                            height: 62px;
+                            margin: 0px 0 16px;
+                            padding: 0px 0;
+                            border-bottom: 1px solid #EBEDEF;
+                            svg.dc-logo {
+                                float: left;
+                            }
+                            button.close-btn {
+                                border: none;
+                                background: none;
+                                float: right;
+                                margin: -8px -48px 0 0;
+                                padding: 0;
+                                width: 40px;
+                                height: 40px;
+                                cursor: pointer;
+                                svg {
+                                    margin: 0;
+                                    padding: 0;
+                                    width: 24px;
+                                    height: 24px;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                        a {
+                            display: block;
+                            margin: 0;
+                            padding: 8px 16px;
+                            text-align: left;
+                            cursor: pointer;
+                            color: #23272A;
+                            font: normal 400 1rem/24px 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                            span {
+                                display: inline;
+                                svg {
+                                    margin-bottom: -6px;
+                                    transform: rotate(270deg);
+                                }
+                            }
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                        button.dl-btn-mobile {
+                            display: inline-flex;
+                            justify-content: center;
+                            width: 282px;
+                            height: 38px;
+                            margin: 48.9vh auto 0;
+                            padding: 7px 16px;
+                            border: none;
+                            border-radius: 30px;
+                            cursor: pointer;
+                            background: #5865F2;
+                            svg {
+                                position: relative;
+                                margin: 0 4px -4px 0;
+                            }
+                            a.dl-link {
+                                padding: 0;
+                                margin: 0;
+                                color: white;
+                                text-decoration: none;
+                                vertical-align: text-bottom;
+                                font: normal 500 0.875rem/24px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                            }
+                            &:hover {
+                                box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3);
+                                opacity: 0.8;
+                            }
+                        }
+                    }
+                }
+                button.menu-btn {
+                    display: block;
+                    height: 40px;
+                    width: 40px;
+                    margin-left: 16px;
+                    padding: 0;
+                    border: none;
+                    cursor: pointer;
+                    background: none;
+                    svg {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+    header {
+        width: auto;
+        height: auto;
+        nav {
+            width: auto;
+            div.navbar {
+                width: auto;
+                div.nav-menu {
+                    display: block; //default
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    opacity: 0;
+                    z-index: -1;
+                    background: rgba(0, 0, 0, 0.3);
+                    ul {
+                        display: block; //default
+                        height: 100%;
+                        //width: 0; //default
+                        width: 243px;
+                        margin: 0;
+                        padding: 24px 48px 0 24px;
+                        position: fixed;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        z-index: 2;
+                        overflow: hidden;
+                        transition: 0.5s;
+                        background: white;
+                        border-radius: 10px 0 0 10px;
+                        list-style: none;
+                        transform: translateX(315px);
+                        transition: all 0.2s ease-in-out;
+                        div.mobile-btns {
+                            display: block;
+                            width: 100%;
+                            height: 62px;
+                            margin: 0px 0 16px;
+                            padding: 0px 0;
+                            border-bottom: 1px solid #EBEDEF;
+                            svg.dc-logo {
+                                float: left;
+                            }
+                            button.close-btn {
+                                border: none;
+                                background: none;
+                                float: right;
+                                margin: -8px -48px 0 0;
+                                padding: 0;
+                                width: 40px;
+                                height: 40px;
+                                cursor: pointer;
+                                svg {
+                                    margin: 0;
+                                    padding: 0;
+                                    width: 24px;
+                                    height: 24px;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                        a {
+                            display: block;
+                            margin: 0;
+                            padding: 8px 16px;
+                            text-align: left;
+                            cursor: pointer;
+                            color: #23272A;
+                            font: normal 400 1rem/24px 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                            span {
+                                display: inline;
+                                svg {
+                                    margin-bottom: -6px;
+                                    transform: rotate(270deg);
+                                }
+                            }
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                        button.dl-btn-mobile {
+                            display: inline-flex;
+                            justify-content: center;
+                            width: 282px;
+                            height: 38px;
+                            margin: 48.9vh auto 0;
+                            padding: 7px 16px;
+                            border: none;
+                            border-radius: 30px;
+                            cursor: pointer;
+                            background: #5865F2;
+                            svg {
+                                position: relative;
+                                margin: 0 4px -4px 0;
+
+                            }
+                            a.dl-link {
+                                padding: 0;
+                                margin: 0;
+                                color: white;
+                                text-decoration: none;
+                                vertical-align: text-bottom;
+                                font: normal 500 0.875rem/24px 'GG Sans-Medium', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                            }
+                            &:hover {
+                                box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3);
+                                opacity: 0.8;
+                            }
+                        }
+                    }
+                }
+                button.menu-btn {
+                    display: block;
+                    height: 40px;
+                    width: 40px;
+                    margin-left: 16px;
+                    padding: 0;
+                    border: none;
+                    cursor: pointer;
+                    background: none;
+                    svg {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }

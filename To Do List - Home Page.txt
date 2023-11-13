@@ -1,0 +1,727 @@
+ -------------------------------------------------------------------------
+| 			Pixels to Percentage Formula			  |
+| Percentage = (Element Size in Pixels / Container Size in Pixels) * 100% |
+ -------------------------------------------------------------------------
+
+
+ ---------------------------------------------------------------------------------------------------------------
+|LINK TO MAKE YOUR FONT SIZE AND SPACING FLUID									|
+|	https://fluidtypography.com/#:~:text=The%20CSS%20defines%20the%20font,font%20size%20is%2048%20px%20.	|
+ ---------------------------------------------------------------------------------------------------------------
+
+
+ ---------------------------------------------------------------------------------------
+|DO IT AS SOON AS POSSIBLE (URGENT)							|
+|FOOTER --> LANGUAGE (row1 -> col1 -> dropdown)						|
+|											|
+|Make it work even if it 2 to 3 languages						|
+|											|
+|Links: 										|	
+|https://www.geeksforgeeks.org/how-to-switch-the-language-of-the-page-using-javascript/	|
+|https://www.tutorialspoint.com/how-to-switch-the-language-of-the-page-using-javascript	|
+|https://www.shecodes.io/athena?tag=language+switcher					|
+|											|
+|Link to Create a Language Switcher (Dropdown)						|
+|https://www.youtube.com/watch?v=ByraB2uMAiM						|
+|											|
+|Working On										|
+|https://codyhouse.co/blog/post/accessible-language-picker				|
+|https://codyhouse.co/ds/components/app/language-picker--flags				|
+|https://codepen.io/kairij/details/PvOGpy						|
+ ---------------------------------------------------------------------------------------
+
+<svg pointer-events="none" class="dropdown-arrow" width="24" height="24" viewBox="0 0 32 32"><path fill="#FFFFFF" fill-rule="evenodd" clip-rule="evenodd" d="M22.2398 17.0778L11.8576 27.5689C11.2532 28.1437 10.3287 28.1437 9.75984 27.5689C9.19095 26.994 9.19095 26.0599 9.75984 25.4491L19.1109 16L9.75984 6.5509C9.19095 5.97605 9.19095 5.00599 9.75984 4.43114C10.3287 3.85629 11.2532 3.85629 11.8576 4.43114L22.2398 14.9581C22.8087 15.5329 22.8087 16.4671 22.2398 17.0778Z"></path></svg>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 66.91" style="enable-background:new 0 0 122.88 66.91" xml:space="preserve"><g><path d="M11.68,1.95C8.95-0.7,4.6-0.64,1.95,2.08c-2.65,2.72-2.59,7.08,0.13,9.73l54.79,53.13l4.8-4.93l-4.8,4.95 c2.74,2.65,7.1,2.58,9.75-0.15c0.08-0.08,0.15-0.16,0.22-0.24l53.95-52.76c2.73-2.65,2.79-7.01,0.14-9.73 c-2.65-2.72-7.01-2.79-9.73-0.13L61.65,50.41L11.68,1.95L11.68,1.95z"/></g></svg>
+
+ -------------------------------------------------------
+|Next To Do ==>						|
+|							|
+|Make the Sidebar smooth from right to left (DONE)	|
+|							|
+|JavaScript to make the buttons fully functional (DONE)	|
+ -------------------------------------------------------
+
+
+ -------------------------------------------------------------------------------
+|JavaScript (DONE)									|
+|Make your whole website not scrollable when the sidebar menu is up		|
+|Sol if JS. 	//when clicked			//not click			|
+|		body {				body {				|
+|			overflow: hidden;		overflow: auto;		|
+|		}				}				|
+ -------------------------------------------------------------------------------
+
+
+ -----------------------------------------------
+| P.S DONT FORGET THIS (DONE)  			|
+| TRANSITION OF 4 SECTIONS			|
+|						|
+|CSS Code:					|
+|When Visible ==>				|
+|	opacity: 1				|
+|	-webkit-transform: translateY(0)	|
+|	transform: translateY(0)		|
+|						|
+|Not Visible ==>				|
+|	opacity: 0				|
+|	transform: translateY(50px)		|
+|	-webkit-transform: translateY(50px)	|
+ -----------------------------------------------
+
+
+ -------------------------------------------------------
+|Done => (DONE)						|
+|Make your paragraph font size/spacing fluid		|
+|							|
+|Fix the design based on the toggle design of browser	|
+|425px below						|
+ -------------------------------------------------------
+
+
+ -----------------------------------------------------------------------
+|Using & in nesting (CHANGE THE EXISITING HOVER TO THIS)		|							|
+|	.some-class {							|
+|  		&:hover {						|
+|	  	  /* when hovered */					|
+|	 	 }							|
+|	 	 &:focus {						|
+|	  	  /* when focused */					|
+|	  	}							|
+| 		 & > button {						|
+|	 	  /* selector equls to .some-class > button */		|
+|	 	}							|
+|	 	&-cool {						|
+|	 	  /*** Notice this! ****/				|
+|	 	  // selects .some-class-cool elements			|
+| 		}							|
+|	}								|
+ -----------------------------------------------------------------------
+
+
+font: normal 800 1.25rem/24px 'GG Sans-ExtraBold', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+
+font: normal 400 1rem/26px 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+
+font: normal 800 1.25rem/19px 'Ginto Plus Variable', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+
+
+font-size: clamp(1.5rem, 4.545vw + 0.196rem, 2.375rem);
+line-height: clamp(1.425rem, 4.318vw + 0.186rem, 2.256rem);
+font-family: 800;
+font-style: normal;
+font-family: 'Ginto Plus Variable', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+
+font: normal 400 1rem/26px 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+
+font-size: clamp(1rem, 0.257vw + 0.949rem, 1.25rem);
+line-height: clamp(1.63rem, 0.418vw + 1.546rem, 2.037rem);
+font-weight: 400;
+font-style: normal;
+font-family: 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+
+(Done)
+H - (440 / 680) * 100 = 64.70%
+W - (678 / 1864) * 100 = 36.37%
+
+W - (1180 / 1864) * 100 = 63.30%
+H - (716 / 1343) * 100 = 53.31%%
+
+W - (531 / 1864) * 100 = 28.48%
+H - (49 / 1343) * 100 = 3.64%
+
+1271 x 951 - screen size
+1256 x 680 - 1st - 3rd section size
+1260 x 1343 - 4th section size (video-img)
+ x 1343 - 4th section size (stars-img)
+
+1260 x 680 - container
+
+1148 x 950 - screen size
+
+1023 x 950 - screen size
+
+1053 x 455
+( / 1002) * 100 =
+
+(1001/1087) * 100 = 92.08831647% or 1008
+
+1008 x 455 - 3 sections
+
+Convert the pixels to percentage of every div/container header to footer
+
+Urgent => Fix the Footer use Grid or Flex for 1023px below
+
+974 x 958
+1085 - height
+max-width: 963px 
+
+sec.video 
+max-width: 959px
+max-height: 1123px
+
+max-width: 1023px {
+        div.row1 {
+            width: 92.09558824%;
+            height: 603px;
+            padding: 0 40px;
+            flex-wrap: wrap;
+            div.col1 {
+                //width: 49.8015873%;
+                //height: 90.66666667%;
+                width: 336px;
+                height: 544px;
+            }
+            div.col2 {
+                width: 217px;
+                height: 164px;
+                //width: 27.59936508%;
+                //height: 27.33333333%;
+                margin-left: 14.88095238%;
+            }
+            div.col3 {
+                width: 217px;
+                height: 164px;
+                //width: 27.59936508%;
+                //height: 27.33333333%;
+                margin-bottom: 0;
+            }
+            div.col4 {
+                width: 217px;
+                //width: 27.59936508%;
+                height: 59.33333333%;
+                margin: -370px 0 0 51.09126984%;
+            }
+            div.col5 {
+                width: 217px;
+                //width: 27.59936508%;
+                height: 59.33333333%;
+                margin-top: -370px;
+            }
+        }
+}
+
+1200px up
+        div.col2 {
+            margin-left: 120px;
+            width: 180px;
+            height: 356px;
+            font: normal 400 1rem/24px 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+            ul {
+                padding: 0;
+                height: 24px;
+                list-style: none;
+                li.product {
+                    margin: -17px 0 20px;
+                    color: #5865F2;
+                }
+                li {
+                    margin-bottom: 8px;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        div.col3 {
+            margin-left: 20px;
+            width: 180px;
+            height: 356px;
+            font: normal 400 1rem/24px 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+            ul {
+                padding: 0;
+                height: 24px;
+                list-style: none;
+                li.company {
+                    margin: -17px 0 20px;
+                    color: #5865F2;
+                }
+                li {
+                    margin-bottom: 8px;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        div.col4 {
+            margin-left: 20px;
+            width: 180px;
+            height: 356px;
+            font: normal 400 1rem/24px 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+            ul {
+                padding: 0;
+                height: 24px;
+                list-style: none;
+                li.resources {
+                    margin: -17px 0 20px;
+                    color: #5865F2;
+                }
+                li {
+                    margin-bottom: 8px;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        div.col5 {
+            margin-left: 20px;
+            width: 180px;
+            height: 356px;
+            font: normal 400 1rem/24px 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+            ul {
+                padding: 0;
+                height: 24px;
+                list-style: none;
+                li.policies {
+                    margin: -17px 0 20px;
+                    color: #5865F2;
+                }
+                li {
+                    margin-bottom: 8px;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+max-width: 1276px {
+        div.row1 {
+            //margin-left: 0px;
+            width: 93.65079365%;
+            div.col1 {
+                width: 23.72881356%;
+                height: 85.85858586%;
+            }
+            div.col2 {
+                width: 15.25423729%;
+                height: 89.8989899%;
+            }
+            div.col3 {
+                width: 15.25423729%;
+                height: 89.8989899%;
+            }
+            div.col4 {
+                width: 15.25423729%;
+                height: 89.8989899%;
+            }
+            div.col5 {
+                width: 15.25423729%;
+                height: 89.8989899%;
+            }
+        }
+}
+
+max-width: 1089px {
+        div.row1 {
+            width: 1074px;
+            height: 420px;
+            div.col1 {
+                width: 21.7877095%;
+                height: 86.66666667%;
+            }
+            div.col2 {
+                width: 13.87337058%;
+                height: 90.47619048%;
+                margin-left: 9.776536313%;
+            }
+            div.col3 {
+                width: 13.87337058%;
+                height: 90.47619048%;
+            }
+            div.col4 {
+                width: 13.87337058%;
+                height: 90.47619048%;
+            }
+            div.col5 {
+                width: 13.87337058%;
+                height: 90.47619048%;
+            }
+        }
+        div.row2 {
+            width: 994px;
+        }
+}
+
+max-width: 1040px {
+        div.row1 {
+            width: 92.21719457%;
+            div.col1 {
+                width: 23.41463415%;
+            }
+            div.col2 {
+                width: 14.92682927%;
+                margin-left: 10.53658537%;
+            }
+            div.col3 {
+                width: 14.92682927%;
+            }
+            div.col4 {
+                width: 14.92682927%;
+            }
+            div.col5 {
+                width: 14.92682927%;
+            }
+        }
+        div.row2 {
+            width: 92.19512195%;
+        }
+}
+
+max-width: 1023px {
+        div.row1 {
+            width: 92.09558824%;
+            height: 603px;
+            div.col1 {
+                width: 336px;
+                height: 164px;
+            }
+            div.col2 {
+                width: 217px;
+                height: 164px;
+            }
+            div.col3 {
+                width: 217px;
+                height: 164px;
+            }
+            div.col4 {
+                width: 217px;
+                height: 164px;
+            }
+            div.col5 {
+                width: 217px;
+                height: 164px;
+            }
+        }
+}
+
+max-width: 848px
+
+p {
+            width: 55.58223289%;
+            font: normal 400 1.063rem/28px 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+}
+
+max-width: 824px 
+p {
+	font: normal 400 1rem/26px 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+}
+
+
+max-width: 767px
+
+h1 {
+	font: normal 800 2.375rem/36px 'Ginto Plus Variable', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+}
+
+p {
+	font: normal 400 1rem/26px 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+}
+
+h2 {
+	font: normal 800 1.75rem/33px 'GG Sans-ExtraBold', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+}
+
+h2 {
+	font: normal 800 1.75rem/26px 'Ginto Plus Variable', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+}
+
+753 x 518
+753 x 377
+753 x 403
+
+
+
+let menu_btn = document.querySelector('#menu_btn');
+let sidebar = document.querySelector('.nav-menu');
+let sidebar_menu = document.querySelector('#sidebar_menu');
+let close_btn = document.querySelector('.close-btn');
+let body = document.querySelector("body");
+
+menu_btn.onclick = function() {
+    sidebar.style.display = "block";
+    sidebar_menu.style.width = "243px";
+    body.style.overflowY = "hidden";
+
+    close_btn.onclick = function() {
+        sidebar.style.display = "none";
+        sidebar_menu.style.width = "0";
+        body.style.overflowY = "auto";
+    }
+}
+
+
+
+
+
+
+function scrollTrigger(selector, options = {}) {
+    let els = document.querySelectorAll(selector)
+    els = Array.from(els)
+    els.forEach(el => {
+        addObserver(el, options)
+    })
+}
+function addObserver(el, options) {
+    if (!('IntersectionObserver' in window)) {
+        if (options.cb) {
+            options.cb(el)
+        }
+        else {
+            entry.target.classList.add('active')
+        }
+        return
+    }
+    let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                if (options.cb) {
+                    options.cb(el)
+                }
+                else {
+                    entry.target.classList.add('active')
+                }
+                observer.unobserve(entry.target)
+            }
+        })
+    }, options)
+    observer.observe(el)
+}
+scrollTrigger('.channels-container', {
+    rootMargin: '-50px'
+})
+scrollTrigger('.voice-container', {
+    rootMargin: '-50px'
+})
+
+
+
+
+
+
+
+
+let tl = gsap.timeline({
+    // yes, we can add it to an entire timeline!
+    scrollTrigger: {
+      trigger: ".channels-container",
+      pin: true,   // pin the trigger element while active
+      start: "top top", // when the top of the trigger hits the top of the viewport
+      end: "+=500", // end after scrolling 500px beyond the start
+      scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+    }
+  });
+
+  tl.from(".channels-container.active",{yPercent: -50})
+
+
+
+
+ScrollTrigger.create({
+    trigger: "#channels",
+    start: "top top",
+    endTrigger: "#voice"
+    end:
+})
+
+
+    background: #4251E9 url("/img_svg/Home/e6d57714479874c665b36c7adee76b1d2.png") no-repeat center bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+
+    @if $home == true {
+        background: #4251E9 url("/img_svg/Home/e6d57714479874c665b36c7adee76b1d2.png") no-repeat center bottom;
+    }
+    @else if $download == true {
+        background: #23272A url("/img_svg/Download/d0d4785a2a708e2e6aae274cbe13cb6c.svg") no-repeat right center;
+    }
+    @else {
+        background: red;
+    }
+
+
+
+        <img class="img-left" src="/img_svg/Home/8a8375ab7908384e1fd6efe408284203.svg" alt="">
+        <img class="img-center" src="/img_svg/Home/e6d57714479874c665b36c7adee76b1d.svg" alt="">
+        <img class="img-right" src="/img_svg/Home/c40c84ca18d84633a9d86b4046a91437.svg" alt="">
+
+
+    img.img-left {
+        position: absolute;
+        bottom: 35.49%;
+        left: -5.3%;
+        z-index: 1;
+        overflow: hidden;
+    }
+    img.img-center {
+        position: absolute;
+        left: -18.7%;
+        bottom: 35.49%;
+    }
+    img.img-right {
+        position: absolute;
+        bottom: 35.49%;
+        right: -2.8%;
+        z-index: 1;
+    }
+
+
+
+
+
+        background: #4251E9 url("/img_svg/Home/e6d57714479874c665b36c7adee76b1d0.png") no-repeat center bottom;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+
+
+
+        background: #4251E9 url("/img_svg/Home/e6d57714479874c665b36c7adee76b1d3.png") no-repeat center bottom; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+
+
+        background: #4251E9 url("/img_svg/Home/8a8375ab7908384e1fd6efe40828420315.png") no-repeat center bottom / contain;
+
+
+        background: #4251E9 url("/img_svg/Home/8a8375ab7908384e1fd6efe40828420314.png") no-repeat left bottom / contain;
+
+
+
+
+
+    <section class="download" id="download">
+        <div class="ios-card">
+            <h3>iOS</h3>
+            <button><a href="#">Download</a></button>
+            <img src="img_svg/Download/7802f24afe58bfbf4cfd3a9e4b210f15.svg" alt="">
+        </div>
+        <div class="linux-card">
+            <h3>Linux</h3>
+            <button><a href="#">Download <span><svg class="arrow-right" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M16.59 8.59004L12 13.17L7.41 8.59004L6 10L12 16L18 10L16.59 8.59004Z"></path></svg></span></a></button>
+            <img src="img_svg/Download/48930d53ee497513a0ee4c3c1ae7b3cb.svg" alt="">
+        </div>
+        <div class="ptb-card">
+            <h3>Feeling experimental?</h3>
+            <p>Try our Public Test Build and test new features before they launch.</p>
+            <button><a href="#">Download Public Test Build <span><svg class="arrow-right" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M16.59 8.59004L12 13.17L7.41 8.59004L6 10L12 16L18 10L16.59 8.59004Z"></path></svg></span></a></button>
+        </div>
+        <div class="android-card">
+            <h3>Android</h3>
+            <button><a href="#">Download</a></button>
+            <img src="img_svg/Download/fbeecd9630673fad538917f2c33a8f62.svg" alt="">
+        </div>
+        <div class="mac-card">
+            <h3>Mac</h3>
+            <button><a href="#">Download</a></button>
+            <img src="img_svg/Download/aaef6e9afb93f4a28236410b0d7376ca.svg" alt="">
+        </div>
+    </section>
+
+
+
+
+
+    header.home-page {
+        nav {
+            div.navbar {
+                div.nav-menu {
+                    ul {
+                        li.home {
+                            display: block;
+                            margin: 0;
+                            padding: 8px 16px;
+                            text-align: left;
+                            border-radius: 10px;
+                            background: #F6F6F6;
+                            cursor: pointer;
+                            font: normal 400 1rem/24px 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                            a {
+                                color: #00B0F4;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    header.download-page {
+        nav {
+            div.navbar {
+                div.nav-menu {
+                    ul {
+                        li.home {
+                            display: block;
+                            margin: 0;
+                            padding: 8px 16px;
+                            text-align: left;
+                            border-radius: 10px;
+                            background: #F6F6F6;
+                            cursor: pointer;
+                            font: normal 400 1rem/24px 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                            a {
+                                color: #00B0F4;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+                            display: block;
+                            margin: 0;
+                            padding: 8px 16px;
+                            text-align: left;
+                            cursor: pointer;
+                            font: normal 400 1rem/24px 'GG Sans-Regular', "Noto Sans", "Helvetica Neue", "Helvetica, Arial", sans-serif;
+                            a {
+                                color: #23272A;
+                                padding: 0;
+                                span {
+                                    display: inline;
+                                    svg {
+                                        margin-bottom: -6px;
+                                        transform: rotate(270deg);
+                                    }
+                                }
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                            &:active {
+                                background: #F6F6F6;
+                                border-radius: 10px;
+                                a {
+                                    color: #00B0F4;
+                                    text-decoration: underline;
+                                }
+                            }
+                            &:hover {
+                                a {
+                                    text-decoration: underline;
+                                }
+                            }
