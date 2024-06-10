@@ -27,7 +27,7 @@ $(window).resize(function() {
     sidebar_menu.style.transform = null;
   }
 });
-// When the user clicks on the hamburger button, toogle between hiding and showing the mobile menu
+// When the user clicks on the hamburger button, toggle between hiding and showing the mobile menu
 menu_btn.onclick = function() {
     sidebar.style.opacity = "1";
     sidebar.style.zIndex = "1";
